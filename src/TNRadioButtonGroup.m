@@ -165,5 +165,11 @@ NSString *const SELECTED_RADIO_BUTTON_CHANGED = @"selectedRadioButtonChanged";
     return  _labelFont;
 }
 
+#pragma mark - Layout
+
+- (CGSize)intrinsicContentSize
+{
+    return CGSizeMake(self.widthOfComponent, self.heightOfComponent);    
+}
 
 @end

@@ -113,7 +113,7 @@ If you want, you can also set the ``` identifier``` property to have a human rea
 Call the ```create``` method and set the ```position``` property to place the group at a specific point.  Don't worry about the frame, this will be automatically calculated.
 And add the object to the view hierarchy.
 
-    self.myGroup = [[TNRadioButtonGroup alloc] initWithRadioButtonData:@[data1, data2, data3] style:TNRadioButtonGroupStyleHorizontal];
+    self.myGroup = [[TNRadioButtonGroup alloc] initWithRadioButtonData:@[data1, data2, data3] layout:TNRadioButtonGroupLayoutHorizontal];
     self.myGroup.identifier = @"My group";
     [self.myGroup create];
     self.myGroup.position = CGPointMake(15, 50);
